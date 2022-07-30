@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign UP</title>
-    <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
@@ -17,14 +16,15 @@
     <nav class="p-3 mb-2 bg-primary opacity-50">
         <h1 id="heading" class="display-5 text-white opacity-100">Sign up Page</h1>
     </nav>
-    <div id="sign-box" class="container justify-content-center w-0 mt-2 p-4 border border-info border border-success p-2 mb-2 , border border-2">
+    <div id="sign-box"
+        class="container justify-content-center w-0 mt-2 p-4 border border-info border border-success p-2 mb-2 , border border-2">
         <legend id="form_title"><b>Sign Up Form </b></legend>
         <div id="form">
-            <form class="form-group" onsubmit="signup(); return false;">
+            <form class="form-group">
                 <br>
                 <label for="firstname">FirstName :</label>
                 <br>
-                <input type="text" class="form-control" required placeholder="firstname"><br>
+                <input type="text" class="form-control" id="firstname" required placeholder="firstname"><br>
                 <label for="lastname">LastName :</label>
                 <br>
                 <input type="text" class="form-control" id="lastname" required placeholder="lastname"><br>
@@ -40,13 +40,12 @@
                     placeholder="confirmpassword"><br>
                 <br><br>
                 <div>
-
-                    <input class="mb-7 btn btn-primary" type="submit" value="Sign Up">
-                    
+                    <input class="mb-7 btn btn-primary" type="button" onclick="signup()" value="Sign Up">
                 </div>
             </form>
         </div>
     </div>
 </body>
+<script src="app.js"></script>
 
 </html>

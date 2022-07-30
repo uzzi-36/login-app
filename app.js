@@ -52,11 +52,12 @@ function signup() {
                 return;
             }
         }
-        console.log(newUser);
-        users.push(newUser)
+        // console.log(newUser);
+        users.push(newUser);
+        console.log(users);
 
         localStorage.setItem("users", JSON.stringify(users))
-        alert("Registration Sucssfully Completed Please sign in");
+        // alert("Registration Sucssfully Completed Please sign in");
         window.location.href = "./login.html";
     }
     else {
@@ -88,7 +89,7 @@ function login() {
 }
 
 function logout() {
-
+    console.log("oyee");
     localStorage.removeItem("logged in");
     window.location.href = "./login.html";
 
